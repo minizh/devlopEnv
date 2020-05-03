@@ -1,16 +1,16 @@
+// public-gist:
+// 3defb19cd4f9b9d4f12d85dd74117de8
 {
     "workbench.colorCustomizations": {
         "[Default Dark+]": {
             "editorCursor.background": "#f00",
-            // "editorCodeLens.foreground": "#ff0000"
             "editor.background": "#3d3c3c",
-            // "editor.foreground": "#ff0000",
             "editorCursor.foreground": "#fff"
         }
     },
-    "git.path": "D:/zhanghao/systemtools/Git/bin/git.exe",
-    "terminal.integrated.shell.windows": "D:\\zhanghao\\systemtools\\Git\\bin\\bash.exe",
-    "window.zoomLevel": 1,
+    "git.path": "D:\\devtools\\Git\\bin\\git.exe",
+    "terminal.integrated.shell.windows": "D:\\devtools\\Git\\bin\\bash.exe",
+    "window.zoomLevel": 0,
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
@@ -25,22 +25,13 @@
     "prettier.bracketSpacing": false,
     "prettier.printWidth": 300,
     "prettier.tabWidth": 4,
-    // 强制单引号
     "prettier.singleQuote": true,
-    // 尽可能控制尾随逗号的打印
     "prettier.trailingComma": "all",
-    // 开启 eslint 支持
-    "prettier.eslintIntegration": false,
     "editor.tabSize": 4,
-    // "eslint.options": {
-    //     "configFile": "D:/codes/cloudpipelineui_angular7_dev/.eslintrc.js"
-    // },
-    ////////////////////////////
-    "color-highlight.matchWords": true,
     "editor.cursorBlinking": "smooth",
     "editor.cursorWidth": 2,
     "editor.detectIndentation": false,
-    "editor.find.autoFindInSelection": true,
+    "editor.find.autoFindInSelection": "never",
     "editor.fontFamily": "YaHei Consolas Hybrid, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
@@ -63,22 +54,20 @@
         "vue-html": "html"
     },
     "emmet.triggerExpansionOnTab": true,
-    "eslint.autoFixOnSave": true,
     "eslint.validate": [
         "javascript",
         "javascriptreact",
         "typescript",
         "typescriptreact",
-        {
-            "autoFix": true,
-            "language": "vue"
-        }
+        "vue"
     ],
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
         "*.vue": "vue",
-        "*.wxss": "css"
+        "*.wxss": "css",
+        "*.cjson": "jsonc",
+        "*.wxs": "javascript"
     },
     "files.autoSaveDelay": 1000,
     "files.exclude": {
@@ -170,9 +159,19 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[markdown]": {
         "editor.defaultFormatter": "vscode.markdown-language-features"
     },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "eslint.codeActionsOnSave.mode": "problems",
+    "terminal.integrated.confirmOnExit": true,
+    "terminal.integrated.fontSize": 15
 }
